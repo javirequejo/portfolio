@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import GlobalStyle from '../styles/styledComponents/GlobalStyle'
+import Home from './home'
 
-const IndexPage = () => {
+const Index = () => {
     return (
-        <div>
-            <h1>Javi Requejo Portfolio</h1>
-        </div>
+        <Fragment>
+            <GlobalStyle />
+            <Home />
+        </Fragment>
     )
 }
 
-export default IndexPage
+export default Index

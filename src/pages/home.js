@@ -8,10 +8,10 @@ const Home = () => {
         <Fragment>
             <Container>
                 <Row>
-                    <Col xl>
+                    <Col large='auto'>
                         <MainContainer />
                     </Col>
-                    <Col xs>
+                    <Col xs='auto'>
                         <Nav />
                     </Col>
                 </Row>

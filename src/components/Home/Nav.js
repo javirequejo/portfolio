@@ -1,24 +1,24 @@
 import React from 'react'
-import { NavUlStyled, NavLiStyled } from '../../styles/styledComponents/HomeStyledComponents'
+import { NavUlStyled, NavLiStyled, NavGatsbyLink } from '../../styles/styledComponents/HomeStyledComponents'
 
 export const Nav = () => {
     return (
         <div>
             <NavUlStyled>
                 <NavLiStyled>
-                    Home
+                    <NavGatsbyLink to='/'>Home</NavGatsbyLink>
                 </NavLiStyled>
                 <NavLiStyled>
-                    Bio
+                    <NavGatsbyLink to='/'>Bio</NavGatsbyLink>
                 </NavLiStyled>
                 <NavLiStyled>
-                    Projects
+                    <NavGatsbyLink to='/'>Projects</NavGatsbyLink>
                 </NavLiStyled>
                 <NavLiStyled>
-                    Blog
+                    <NavGatsbyLink to='/'>Blog</NavGatsbyLink>
                 </NavLiStyled>
                 <NavLiStyled>
-                    Contact
+                    <NavGatsbyLink to='/'>Contact</NavGatsbyLink>
                 </NavLiStyled>
             </NavUlStyled>
         </div>

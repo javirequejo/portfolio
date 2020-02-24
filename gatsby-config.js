@@ -1,12 +1,27 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
+  siteMetadata: {
+    title: 'Javi Requejo - Full Stack Developer',
+    author: 'Javi Requejo'
+  },
   plugins: [
     'gatsby-plugin-sass',
+    'gatsby-transformer-remark',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: path.join(__dirname, `src`, `posts`),
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {

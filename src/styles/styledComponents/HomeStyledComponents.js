@@ -2,12 +2,13 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const MainDivTitle = styled.div`
+    width: 35em;
     display: flex;
     align-items: left;
     justify-content: center;
-    padding: 2rem;
+    margin: 10em 0 0 5em;
+    padding: 1rem;
     border: 2px solid black;
-    border-color: #FFFFFF;
 `
 
 export const MainH1Title = styled.h1`
@@ -17,20 +18,15 @@ export const MainH1Title = styled.h1`
 
 export const NavUlStyled = styled.ul`
     display: flex;
-    flex-direction: column;
-    width: 20rem;
+    border: 1px solid red;
+    width: 40rem;
+    margin: 0 auto;
+    flex-direction: row;
 `
 
 export const NavLiStyled = styled.li`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2rem;
-    width: 80%;
-    margin-top: 1rem;
+    margin: 1em 2em;
     font-weight: 700;
-    border: 2px solid black;
-    border-color: #FFFFFF;
     
 `
 

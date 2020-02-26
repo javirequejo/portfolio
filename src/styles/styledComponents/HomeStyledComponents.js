@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+
 
 export const MainDivTitle = styled.div`
     width: 35em;
@@ -28,8 +28,4 @@ export const NavLiStyled = styled.li`
     margin: 1em 2em;
     font-weight: 700;
     
-`
-
-export const NavGatsbyLink = styled(Link)`
-    text-decoration: none;
 `

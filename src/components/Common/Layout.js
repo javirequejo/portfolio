@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from './Footer'
-import '../styles/index.css'
+import '../../styles/index.css'
 
 const Layout = props => {
     return (

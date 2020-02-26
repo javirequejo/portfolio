@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/Layout'
+import Layout from '../components/Common/Layout'
 import PostsContainer from '../components/Blog/PostsContainer'
 
 const Blog = () => {

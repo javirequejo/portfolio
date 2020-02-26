@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
 import { PageContainer } from '../styles/styledComponents/CommonStyledComponents'
-import { MainContainer } from '../components/Home/MainContainer'
+import MainContainer from '../components/Home/MainContainer'
+import MainProfilePic from '../components/Home/MainProfilePic'
 import { Nav } from '../components/Home/Nav'
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
                         <MainContainer />
                     </Col>
                     <Col xs='auto'>
-                        <
+                        <MainProfilePic />
                     </Col>
                 </Row>
             </PageContainer>

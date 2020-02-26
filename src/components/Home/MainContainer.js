@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { MainDivTitle, MainH1Title } from '../../styles/styledComponents/HomeStyledComponents'
 
-export const MainContainer = () => {
+const MainContainer = () => {
     const author = useStaticQuery(graphql`
         query {
             site {
@@ -23,3 +23,5 @@ export const MainContainer = () => {
         </div>
     )
 }
+
+export default MainContainer

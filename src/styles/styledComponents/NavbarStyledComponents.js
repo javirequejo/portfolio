@@ -3,9 +3,8 @@ import styled from 'styled-components'
 export const Navigation = styled.nav`
     height: 10vh;
     display: flex;
-    background-color: #fff;
     position: relative;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-transform: uppercase;
     border-bottom: 2px solid #33333320;
     margin: 0 auto;

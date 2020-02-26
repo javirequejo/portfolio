@@ -14,13 +14,11 @@ const MainTitleContainer = () => {
     `)
 
     return (
-        <div>
-            <MainDivTitle>
-                <MainH1Title>
-                    Hi, I'm {author.site.siteMetadata.author}<br /> a Full Stack Developer.
+        <MainDivTitle>
+            <MainH1Title>
+                Hi, I'm {author.site.siteMetadata.author}<br /> a Full Stack Developer.
                 </MainH1Title>
-            </MainDivTitle>
-        </div>
+        </MainDivTitle>
     )
 }
 

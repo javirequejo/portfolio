@@ -8,6 +8,12 @@ export const PageContainer = styled.div`
     border: 1px red solid;
 `
 
+export const StyledSection = styled.section`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+`
+
 export const NavGatsbyLink = styled(Link)`
     text-decoration: none;
     color: #111;

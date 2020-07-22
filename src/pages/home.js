@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <PageContainer>
       <StyledSection>
-        <MainTitleContainer />
         <MainImgContainer />
+        <MainTitleContainer />
       </StyledSection>
     </PageContainer>
   )

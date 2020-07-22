@@ -1,26 +1,27 @@
 import React from 'react'
-import Img from "gatsby-image"
-import { graphql, useStaticQuery } from 'gatsby'
+import styled from 'styled-components'
+
+const ProfileImgContainer = styled.div`
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  align-items: start;
+  height: 15em;
+`
+
+const ProfileImg = styled.img`
+  height: 100%;
+`
 
 const MainImgContainer = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(name: { eq: "profile" }, extension: { eq: "png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
-  console.log(data)
-  return (
-    <div>
-      <Img fluid={data.file.childImageSharp.fluid} alt="hola" />
-    </div>
-  )
+    return (
+      <ProfileImgContainer>
+        <ProfileImg 
+          src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png"
+          alt="javi-requejo-profile" 
+        />
+      </ProfileImgContainer>
+    )
 }
 
 export default MainImgContainer

@@ -5,13 +5,14 @@ export const PageContainer = styled.div`
     width: 80em;
     height: 40em;
     margin: auto;
-    border: 1px red solid;
 `
 
 export const StyledSection = styled.section`
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 40em;
+    margin: 4em 0 0 4em;
 `
 
 export const NavGatsbyLink = styled(Link)`

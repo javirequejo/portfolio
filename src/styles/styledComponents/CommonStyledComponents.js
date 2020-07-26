@@ -1,23 +1,19 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
-export const PageContainer = styled.div`
-    width: 80em;
-    height: 40em;
-    margin: auto;
+export const PageSection = styled.section`
+    height: 90vh; /* 100vh (screen) - 10vh (nav) */ 
+    background: no-repeat center center fixed;
+    background-image: url(${props => props.bg ? props.bg : 'none'});
 `
 
-export const StyledSection = styled.section`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 40em;
-    margin: 4em 0 0 4em;
+export const SpanSpacer = styled.span`
+    padding: 20px;
 `
 
 export const NavGatsbyLink = styled(Link)`
     text-decoration: none;
-    color: #111;
+    color: white;
     display: inline-block;
     white-space: nowrap;
     margin: 0 1vw;

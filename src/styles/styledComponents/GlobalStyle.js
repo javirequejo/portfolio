@@ -3,13 +3,12 @@ import { createGlobalStyle } from 'styled-components'
 const GlobalStyle = createGlobalStyle`
 
     * {
-        font-family: 'Raleway';
+        font-family: 'Lato', sans-serif;
     }
 
     body {
-        padding: 1rem;
-        background-color: #304671;
-        color: #FFFFFF;
+        background-color: #0e153a;
+        color: #e2f3f5;
     }
 
     ul {

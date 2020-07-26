@@ -2,11 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const ProfileImgContainer = styled.div`
-  display: flex;
   margin: 0;
-  justify-content: center;
-  align-items: start;
-  height: 15em;
+  height: 30vh;
 `
 
 const ProfileImg = styled.img`

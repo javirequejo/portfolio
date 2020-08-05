@@ -18,7 +18,7 @@ const PostsContainer = () => {
     `)
 
     const posts = data.allMarkdownRemark.edges
-    console.log()
+
     return (
         <ol>
             {posts.map((elem,key) => {

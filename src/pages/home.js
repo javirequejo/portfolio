@@ -4,6 +4,9 @@ import { PageSection } from '../styles/styledComponents/CommonStyledComponents'
 import MainTitleContainer from '../components/Home/MainTitleContainer'
 import MainImgContainer from '../components/Home/MainImgContainer'
 import MainSocialIcons from '../components/Home/MainSocialIcons'
+import ProjectsTitle from '../components/Home/ProjectsTitle'
+import ProjectsGrid from '../components/Home/ProjectsGrid'
+
 
 const MeContainer = styled.div`
   display: flex;
@@ -23,15 +26,21 @@ const InfoMeBlock = styled.div`
 const Home = () => {
 
   return (
-    <PageSection bg="https://res.cloudinary.com/dls511fr9/image/upload/v1595457709/portfolio/code.jpg">
-      <MeContainer>
-        <InfoMeBlock>
-          <MainImgContainer />
-          <MainTitleContainer />
-          <MainSocialIcons />
-        </InfoMeBlock>
-      </MeContainer>
-    </PageSection>
+    <>
+      <PageSection bg="https://res.cloudinary.com/dls511fr9/image/upload/v1595457709/portfolio/code.jpg">
+        <MeContainer>
+          <InfoMeBlock>
+            <MainImgContainer />
+            <MainTitleContainer />
+            <MainSocialIcons />
+          </InfoMeBlock>
+        </MeContainer>
+      </PageSection>
+      <PageSection>
+        <ProjectsTitle/>
+        <ProjectsGrid/>
+      </PageSection>
+    </>
   )
 }
 

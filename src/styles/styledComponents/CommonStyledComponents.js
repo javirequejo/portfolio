@@ -11,6 +11,12 @@ export const SpanSpacer = styled.span`
     padding: 20px;
 `
 
+export const SectionTitle = styled.h2`
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+`
+
 export const NavGatsbyLink = styled(Link)`
     text-decoration: none;
     color: white;
@@ -28,13 +34,13 @@ export const NavGatsbyLink = styled(Link)`
         width: 0%;
         content: ".";
         color: transparent;
-        background: goldenrod;
+        background: ${props => props.theme.colors.pale};
         height: 1px;
         transition: all 0.4s ease-in;
     }
 
     :hover {
-        color: goldenrod;
+        color: ${props => props.theme.colors.pale};
         ::after {
         width: 100%;
         }

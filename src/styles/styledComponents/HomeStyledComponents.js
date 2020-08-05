@@ -8,7 +8,7 @@ export const MainDivTitle = styled.div`
     justify-content: center;
     margin: 10em 0 0 5em;
     padding: 1rem;
-    border: 2px solid black;
+    border: 2px solid ${props => props.theme.colors.primary};
 `
 
 export const MainH1Title = styled.h1`
@@ -18,7 +18,6 @@ export const MainH1Title = styled.h1`
 
 export const NavUlStyled = styled.ul`
     display: flex;
-    border: 1px solid red;
     width: 40rem;
     margin: 0 auto;
     flex-direction: row;

@@ -15,8 +15,7 @@ const MainH1Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
-    background: #0e153a;
-    background: rgba(14, 21, 58, 0.7);
+    background: ${props => props.theme.colors.primary};
     border-radius: 0.1em;
 `
 

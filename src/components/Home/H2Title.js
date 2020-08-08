@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {SectionTitle} from '../../styles/styledComponents/CommonStyledComponents'
 
 const TitleContainer = styled.div`
     display: flex;
@@ -10,12 +9,18 @@ const TitleContainer = styled.div`
     margin: 2rem;
 `
 
-const ProjectsTitle = () => {
+export const SectionTitle = styled.h2`
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+`
+
+const H2Title = props => {
     return (
         <TitleContainer>
-            <SectionTitle>Things that I've built</SectionTitle>
+            <SectionTitle>{props.title}</SectionTitle>
         </TitleContainer>
     )
 }
 
-export default ProjectsTitle
+export default H2Title

@@ -4,6 +4,7 @@ export const Navigation = styled.nav`
     height: 10vh;
     display: flex;
     position: relative;
+    overflow: hidden;
     justify-content: flex-end;
     text-transform: uppercase;
     border-bottom: 2px solid #33333320;

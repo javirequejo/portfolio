@@ -5,7 +5,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -22,6 +21,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {

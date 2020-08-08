@@ -4,8 +4,8 @@ import { PageSection } from '../styles/styledComponents/CommonStyledComponents'
 import MainTitleContainer from '../components/Home/MainTitleContainer'
 import MainImgContainer from '../components/Home/MainImgContainer'
 import MainSocialIcons from '../components/Home/MainSocialIcons'
-import ProjectsTitle from '../components/Home/ProjectsTitle'
-import ProjectsGrid from '../components/Home/ProjectsGrid'
+import H2Title from '../components/Home/H2Title'
+import ProjectsContainer from '../components/Home/ProjectsContainer'
 
 
 const MeContainer = styled.div`
@@ -37,8 +37,14 @@ const Home = () => {
         </MeContainer>
       </PageSection>
       <PageSection>
-        <ProjectsTitle/>
-        <ProjectsGrid/>
+        <H2Title title="Things that I've built"/>
+        <ProjectsContainer/>
+      </PageSection>
+      <PageSection>
+        <H2Title title="About me"/>
+      </PageSection>
+      <PageSection>
+        <H2Title title="Contact with me"/>
       </PageSection>
     </>
   )

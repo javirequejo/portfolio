@@ -5,7 +5,7 @@ const NavLinks = () => {
     return (
         <div>
             <NavGatsbyLink to='/'>Home</NavGatsbyLink>
-            <NavGatsbyLink to='/'>Bio</NavGatsbyLink>
+            <NavGatsbyLink to='/'>About</NavGatsbyLink>
             <NavGatsbyLink to='/'>Projects</NavGatsbyLink>
             <NavGatsbyLink to='/'>Blog</NavGatsbyLink>
             <NavGatsbyLink to='/'>Contact</NavGatsbyLink>

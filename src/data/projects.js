@@ -1,38 +1,42 @@
-export const projects = [
-    {
-        title: "Story Land",
-        image: "https://res.cloudinary.com/dls511fr9/image/upload/v1596923523/portfolio/storyland-yellow.png",
-        description: "App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.",
-        stack: "Frontend: React | Backend: Node.js with Express, MongoDB & Google Cloud Vision API & Google Books API",
-        live_url: "",
-        github_url: "",
-        video: "" 
-    },
-    {
-        title: "Crypto Live",
-        image: "",
-        description: "App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.",
-        stack: "Frontend: React | Backend: Node.js with Express, MongoDB & Google Cloud Vision API & Google Books API",
-        live_url: "",
-        github_url: "",
-        video: null
-    },
-    {
-        title: "Greatest Way",
-        image: "",
-        description: "App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.",
-        stack: "Frontend: React | Backend: Node.js with Express, MongoDB & Google Cloud Vision API & Google Books API",
-        live_url: "",
-        github_url: "",
-        video: null
-    },
-    {
-        title: "Greatest Way",
-        image: "",
-        description: "App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.",
-        stack: "Frontend: React | Backend: Node.js with Express, MongoDB & Google Cloud Vision API & Google Books API",
-        live_url: "",
-        github_url: "",
-        video: null
-    },
-]
+export default [
+  {
+    key: 1,
+    title: 'Story Land',
+    image: 'https://res.cloudinary.com/dls511fr9/image/upload/v1596923523/portfolio/storyland-yellow.png',
+    description: 'App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.',
+    stack: 'Frontend: React | Backend: Node.js with Express, MongoDB & Google Cloud Vision API & Google Books API',
+    live_url: '',
+    github_url: '',
+    video: '',
+  },
+  {
+    key: 2,
+    title: 'Crypto Live',
+    image: '',
+    description: 'App to view crypto currencies prices and explore crypto data.',
+    stack: 'Gatsby, React',
+    live_url: '',
+    github_url: '',
+    video: null,
+  },
+  {
+    key: 3,
+    title: 'Greatest Way',
+    image: '',
+    description: 'A web application that implements Maps Directions API, Uber API and Blablacar Api for getting the fastest, shortest or the route that burns the most calories between two points in the map and developed in collaboration with Alfredo González.',
+    stack: 'Node.js with Express, MongoDB & Handlebars.',
+    live_url: '',
+    github_url: '',
+    video: null,
+  },
+  {
+    key: 4,
+    title: 'Pokemon League Game',
+    image: 'https://res.cloudinary.com/dls511fr9/image/upload/v1596998133/portfolio/pokemon-league.png',
+    description: 'Game of Pokemon battles using Javascript, jQuery, HTML5 and CSS animations',
+    stack: null,
+    live_url: 'https://javirequejo.github.io/pokemon-league/',
+    github_url: 'https://github.com/javirequejo/pokemon-league',
+    video: null,
+  },
+];

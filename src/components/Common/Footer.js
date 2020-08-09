@@ -8,7 +8,7 @@ const FooterParagraph = styled.p`
 const Footer = () => {
     return (
         <footer>
-            <FooterParagraph>Created by Javi Requejo with love in 2020</FooterParagraph>
+            <FooterParagraph>Created by Javi Requejo, 2020</FooterParagraph>
         </footer>
     )
 }

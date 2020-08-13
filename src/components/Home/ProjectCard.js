@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CardDiv = styled.div`
@@ -41,24 +42,31 @@ const CardInner = styled.div`
     }
 `;
 
-const ProjectCard = (project) => {
+const ProjectCard = (props) => {
   const [inHover, setHover] = useState(false);
 
+  const { image, title, description } = props;
   return (
     <CardDiv
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
-      {!inHover && (<CardImg src={project.image} alt={project.title} />) }
+      {!inHover && (<CardImg src={image} alt={title} />) }
       {inHover
             && (
             <CardInner className="card-inner">
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <h3>{title}</h3>
+              <p>{description}</p>
             </CardInner>
             )}
     </CardDiv>
   );
+};
+
+ProjectCard.propTypes = {
+  image: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+  description: propTypes.string.isRequired,
 };
 
 export default ProjectCard;

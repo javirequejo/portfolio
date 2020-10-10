@@ -1,8 +1,8 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const PostsContainer = () => {
-    const data = useStaticQuery(graphql`
+  const data = useStaticQuery(graphql`
     query {
         allMarkdownRemark {
             edges {
@@ -15,21 +15,21 @@ const PostsContainer = () => {
             }
         }
     }
-    `)
+    `);
 
-    const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges;
 
-    return (
-        <ol>
-            {posts.map((elem,key) => {
-            return <li key={key}>
-                <h2>{elem.node.frontmatter.title}</h2>
-                <p>{elem.node.frontmatter.date}</p>
-                </li>
-        })}
-        </ol>
+  return (
+    <ol>
+      {posts.map((elem) => (
+        <li key={elem.node.frontmatter.title}>
+          <h2>{elem.node.frontmatter.title}</h2>
+          <p>{elem.node.frontmatter.date}</p>
+        </li>
+      ))}
+    </ol>
 
-    )
-}
+  );
+};
 
-export default PostsContainer
+export default PostsContainer;

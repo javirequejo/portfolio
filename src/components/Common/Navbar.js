@@ -1,27 +1,20 @@
-import React, { useState } from 'react'
-import NavLinks from './NavLinks'
-import { Navigation, Toggle, Hamburger, Navbox } from '../../styles/styledComponents/NavbarStyledComponents'
-
+import React, { useState } from 'react';
+import NavBox from './NavBox';
+import {
+  Navigation, Toggle, Hamburger,
+} from '../../styles/styledComponents/NavbarStyledComponents';
 
 const Navbar = () => {
-    const [navbarOpen, setNavbarOpen] = useState(false)
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-    return (
-        <Navigation>
-            <Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>
-                {navbarOpen ? <Hamburger open /> : <Hamburger />}
-            </Toggle>
-            {navbarOpen ? (
-                <Navbox>
-                    <NavLinks />
-                </Navbox>
-            ) : (
-                <Navbox open>
-                    <NavLinks />
-                </Navbox>
-            )}
-        </Navigation>
-    )
-}
+  return (
+    <Navigation>
+      <Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>
+        {navbarOpen ? <Hamburger open /> : <Hamburger />}
+      </Toggle>
+      {navbarOpen && (<NavBox />)}
+    </Navigation>
+  );
+};
 
-export default Navbar
+export default Navbar;

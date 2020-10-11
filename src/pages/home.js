@@ -8,6 +8,9 @@ import MainImgContainer from '../components/Home/MainImgContainer';
 import AboutDescriptionContainer from '../components/Home/AboutDescriptionContainer';
 import StacksContainer from '../components/Home/StacksContainer';
 import TechSkillsContainer from '../components/Home/TechSkillsContainer';
+import ResumeContainer from '../components/Home/ResumeContainer';
+import LatestArticlesContainer from '../components/Home/LatestArticlesContainer';
+import ContactContainer from '../components/Home/ContactContainer';
 
 const HomeDiv = styled.div`
 
@@ -30,13 +33,19 @@ const Home = () => (
       <AboutDescriptionContainer />
       <StacksContainer />
       <TechSkillsContainer />
+      <ResumeContainer />
     </PageSection>
     <PageSection>
-      <H2Title title="Things that I've built" />
+      <H2Title title="Projects I'm working on" />
       <ProjectsContainer />
     </PageSection>
     <PageSection>
-      <H2Title title="Contact with me" />
+      <H2Title title="Articles" />
+      <LatestArticlesContainer />
+    </PageSection>
+    <PageSection>
+      <H2Title title="Let's talk" />
+      <ContactContainer />
     </PageSection>
   </HomeDiv>
 );

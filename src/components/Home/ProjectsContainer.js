@@ -5,13 +5,10 @@ import projects from '../../data/projects';
 
 const ProjectsGrid = styled.div`
     width: 80vw;
-    height: 100%;
-    margin: 5vh auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-wrap: wrap;
-
+    padding: 5vh 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vh 2vw;
 `;
 
 const ProjectsContainer = () => (

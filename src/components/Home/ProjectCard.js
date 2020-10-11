@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import propTypes from 'prop-types';
 import styled from 'styled-components';
 
 const CardDiv = styled.div`
@@ -7,8 +6,8 @@ const CardDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30vw;
-    height: 30vh;
+    width: 34vw;
+    height: 40vh;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
@@ -61,12 +60,6 @@ const ProjectCard = (props) => {
             )}
     </CardDiv>
   );
-};
-
-ProjectCard.propTypes = {
-  image: propTypes.string.isRequired,
-  title: propTypes.string.isRequired,
-  description: propTypes.string.isRequired,
 };
 
 export default ProjectCard;

@@ -1,43 +1,31 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
-import { SpanSpacer } from '../../styles/styledComponents/CommonStyledComponents'
-
+import React from 'react';
+import styled from 'styled-components';
+import { SpanSpacer } from '../../styles/styledComponents/CommonStyledComponents';
 
 const MainDivTitle = styled.div`
     display: flex;
-    align-items: left;
-    justify-content: center;
-    padding: 1rem;
-`
+`;
 
 const MainH1Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
-    text-align: center;
-    background: ${props => props.theme.colors.primary};
     border-radius: 0.1em;
-`
 
-const MainTitleContainer = () => {
-    const author = useStaticQuery(graphql`
-        query {
-            site {
-                siteMetadata {
-                    author
-                }
-            }
-        }
-    `)
+    @media (max-width: 768px) {
+        font-size: 2.2rem;
+    }
+`;
 
-    return (
-        <MainDivTitle>
-            <MainH1Title>
-                Hi, I'm {author.site.siteMetadata.author},<SpanSpacer></SpanSpacer>
-                <br /><SpanSpacer></SpanSpacer> a Full Stack Developer<SpanSpacer></SpanSpacer>
-                </MainH1Title>
-        </MainDivTitle>
-    )
-}
+const MainTitleContainer = () => (
+  <MainDivTitle>
+    <MainH1Title>
+      Hello, I'm Javi
+      <span role="img" aria-label="computer-boy">👨🏽‍💻</span>
+      <br />
+      a Full Stack Developer
+      <SpanSpacer />
+    </MainH1Title>
+  </MainDivTitle>
+);
 
-export default MainTitleContainer
+export default MainTitleContainer;

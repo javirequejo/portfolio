@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const PageSection = styled.section`
-    padding: 5vh 0;
-    height: 100vh; /* 100vh (screen) - 10vh (nav) */ 
+    padding: 5vh 10vw;
     background: no-repeat center center fixed;
     background-image: url(${(props) => (props.bg ? props.bg : 'none')});
-    scroll-snap-align: start;
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+    }
 `;
 
 export const SpanSpacer = styled.span`

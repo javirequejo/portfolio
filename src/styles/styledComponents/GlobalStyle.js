@@ -6,8 +6,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        background-color: ${(props) => props.theme.colors.primary};
-        color: ${(props) => props.theme.colors.white};
+        color: ${(props) => props.theme.colors.primary};
+        font-size: 18px;
     }
 
     ul {

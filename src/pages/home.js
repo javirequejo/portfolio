@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { PageSection } from '../styles/styledComponents/CommonStyledComponents';
-import MainTitleContainer from '../components/Home/MainTitleContainer';
 import H2Title from '../components/Home/H2Title';
+import MainContainer from '../components/Home/MainContainer';
 import ProjectsContainer from '../components/Home/ProjectsContainer';
-import MainImgContainer from '../components/Home/MainImgContainer';
 import AboutDescriptionContainer from '../components/Home/AboutDescriptionContainer';
 import StacksContainer from '../components/Home/StacksContainer';
 import TechSkillsContainer from '../components/Home/TechSkillsContainer';
@@ -16,20 +15,13 @@ const HomeDiv = styled.div`
 
 `;
 
-const MeContainer = styled.div`
-  padding-top: 5vh;
-`;
-
 const Home = () => (
   <HomeDiv>
     <PageSection>
-      <MeContainer>
-        <MainTitleContainer />
-        <MainImgContainer />
-      </MeContainer>
+      <MainContainer />
     </PageSection>
     <PageSection>
-      <H2Title title="About me" />
+      <H2Title title="...and what do you do?" />
       <AboutDescriptionContainer />
       <StacksContainer />
       <TechSkillsContainer />

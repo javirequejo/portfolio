@@ -1,20 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Navigation = styled.nav`
-    height: 10vh;
-    display: flex;
-    overflow: hidden;
-    padding: 0 5vw;
+  height: 10vh;
+  display: flex;
+  overflow: hidden;
+  padding: 0 5vw;
+  margin: 2vh 0;
 
-    @media (max-width: 768px) {
-        position: sticky;
-        height: 8vh;
-        top: 0;
-        left: 0;
-        right: 0;
-        left: 0;
-    }
+  @media (max-width: 768px) {
+    height: 8vh;
+  }
 `;
 
 const NavLogo = styled.div`
@@ -28,6 +25,11 @@ const NavLogoTitle = styled.h2`
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
+  color: ${(props) => props.theme.colors.primary};
+  &::hover {
+    text-decoration: none;
+    color: red;
+  }
 `;
 
 const NavLogoImg = styled.img`
@@ -36,10 +38,12 @@ const NavLogoImg = styled.img`
 
 const Navbar = () => (
   <Navigation>
-    <NavLogo>
-      <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" />
-      <NavLogoTitle>JAVI REQUEJO</NavLogoTitle>
-    </NavLogo>
+    <Link to="/">
+      <NavLogo>
+        <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" />
+        <NavLogoTitle>JAVI REQUEJO</NavLogoTitle>
+      </NavLogo>
+    </Link>
   </Navigation>
 );
 

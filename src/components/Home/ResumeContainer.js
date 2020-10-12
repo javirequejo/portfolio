@@ -20,7 +20,7 @@ const ResumeContainer = () => (
     <ResumeP>
       Here is my resume in
       {' '}
-      <Link to="/">PDF</Link>
+      <Link target="_blank" rel="noopener" to="https://res.cloudinary.com/dls511fr9/image/upload/v1602499044/portfolio/Javier_Requejo_Resume.pdf">PDF</Link>
     </ResumeP>
   </ResumeDiv>
 );

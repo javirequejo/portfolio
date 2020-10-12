@@ -3,11 +3,16 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 
 const AboutDescriptionDiv = styled.div`
-  padding: 2rem 4rem;
+  padding: 2vh 0;
+
+  @media (max-width: 768px) {
+    padding: 2vh 5vw;
+  }
 `;
 
 const AboutDescriptionP = styled.p`
   font-size: 1.2rem;
+  line-height: 2rem;
 `;
 
 const AboutDescriptionContainer = () => (

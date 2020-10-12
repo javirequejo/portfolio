@@ -2,12 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ArticlesContainer = styled.div`
+  padding: 4vh 5vw;
 `;
 
 const ArticlesGrid = styled.div`
     margin-top: 5vh;
-    display: grid;
-    padding: 5vh 5vw;
+    display: grid;  
     grid-template-columns: 1fr 1fr;
     grid-gap: 5vh 2vw;
 `;

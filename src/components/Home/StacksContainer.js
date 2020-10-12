@@ -1,30 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
+import AboutTitle from './AboutTitle';
+
+const StacksMainContainer = styled.div`
+  padding: 4vh 5vw;
+  display: flex;
+  flex-direction: column;
+`;
 
 const StacksDiv = styled.div`
-    padding: 2vh 10vw;
-    display: flex;
-    justify-content: space-around;
+  padding: 5vh 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 0.5rem;
 `;
 
 const SingleStack = styled.div`
-    border: 1px solid red;
-    height: 15vh;
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-shadow: 0 0 4px #000000;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const SingleStackH4 = styled.h4`
+  font-size: 1.5rem;
 `;
 
 const StacksContainer = () => (
-  <StacksDiv>
-    <SingleStack>
-      <h4>Frontend: 50%</h4>
-    </SingleStack>
-    <SingleStack>
-      <h4>Backend: 50%</h4>
-    </SingleStack>
-  </StacksDiv>
+  <StacksMainContainer>
+    <AboutTitle>Profile</AboutTitle>
+    <StacksDiv>
+      <SingleStack>
+        <SingleStackH4>Frontend: 50%</SingleStackH4>
+      </SingleStack>
+      <SingleStack>
+        <SingleStackH4>Backend: 50%</SingleStackH4>
+      </SingleStack>
+    </StacksDiv>
+  </StacksMainContainer>
 );
 
 export default StacksContainer;

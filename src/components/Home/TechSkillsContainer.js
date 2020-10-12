@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import AboutTitle from './AboutTitle';
 import cssIcon from '../../images/icons/css-icon.png';
 import gitIcon from '../../images/icons/git-icon.png';
 import graphqlIcon from '../../images/icons/graphql-icon.png';
@@ -12,29 +13,25 @@ import sqlIcon from '../../images/icons/sql-icon.png';
 import symfonyIcon from '../../images/icons/symfony-icon.png';
 
 const TechSkillsDiv = styled.div`
-    padding: 5vh 5vw;
+    padding: 4vh 5vw;
     
 `;
 
-const TechSkillsTitle = styled.h3`
-
-`;
-
 const TechSkillsBox = styled.div`
-    padding: 2vh 2vw;
+    padding: 5vh 2vw 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
 `;
 
 const SingleTechSkill = styled.img`
-    height: 18vh;
-    width: 10vw;
+    max-height: 18vh;
+    max-width: 12vw;
 `;
 
 const TechSkillsContainer = () => (
   <TechSkillsDiv>
-    <TechSkillsTitle>Tech Skills</TechSkillsTitle>
+    <AboutTitle>Tech Skills</AboutTitle>
     <TechSkillsBox>
       <SingleTechSkill src={jsIcon} alt="javascript" />
       <SingleTechSkill src={reactIcon} alt="react" />

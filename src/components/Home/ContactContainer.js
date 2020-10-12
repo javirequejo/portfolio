@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import SocialIcon from './SocialIcon';
 
-const ContactDiv = styled.div`
-    padding: 2rem 4rem;
+const ContactDiv = styled.div`  
+  padding: 4vh 5vw;
 `;
 
 const ContactP = styled.p`

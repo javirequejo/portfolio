@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PageSection } from '../styles/styledComponents/CommonStyledComponents';
 import H2Title from '../components/Home/H2Title';
 import MainContainer from '../components/Home/MainContainer';
 import ProjectsContainer from '../components/Home/ProjectsContainer';
@@ -15,28 +14,38 @@ const HomeDiv = styled.div`
 
 `;
 
+const PageSection = styled.section`
+    padding: ${(props) => (props.slim ? '5vh 14vw' : '5vh 10vw')} ;
+    background: no-repeat center center fixed;
+    background-image: url(${(props) => (props.bg ? props.bg : 'none')});
+
+    @media (max-width: 768px) {
+        padding: 1.5rem;
+    }
+`;
+
 const Home = () => (
   <HomeDiv>
     <PageSection>
       <MainContainer />
     </PageSection>
-    <PageSection>
+    <PageSection slim>
       <H2Title title="...and what do you do?" />
       <AboutDescriptionContainer />
       <StacksContainer />
       <TechSkillsContainer />
       <ResumeContainer />
     </PageSection>
-    <PageSection>
-      <H2Title title="Projects I'm working on" />
+    <PageSection slim>
+      <H2Title title="...projects I'm working on" />
       <ProjectsContainer />
     </PageSection>
-    <PageSection>
-      <H2Title title="Articles" />
+    <PageSection slim>
+      <H2Title title="...my writings" />
       <LatestArticlesContainer />
     </PageSection>
-    <PageSection>
-      <H2Title title="Let's talk" />
+    <PageSection slim>
+      <H2Title title="...and let's talk" />
       <ContactContainer />
     </PageSection>
   </HomeDiv>

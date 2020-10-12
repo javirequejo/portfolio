@@ -14,7 +14,14 @@ const MainContainerDiv = styled.div`
 `;
 
 const MainDivTitle = styled.div`
-    flex-grow: 1;
+    min-width: 34rem;
+    padding: 10vh 4vw 2vh;
+    @media (max-width: 1100px) {
+      min-width: 25rem;
+    }
+    @media (max-width: 768px) {
+      min-width: 0;
+    }
 `;
 
 const MainH1Title = styled.h1`
@@ -24,12 +31,8 @@ const MainH1Title = styled.h1`
 `;
 
 const MainImgDiv = styled.div`
-    max-width: 40rem;
-    max-height: 25rem;
-    @media (max-width: 1100px) {
-        max-width: 20rem;
-        max-height: 14rem;
-    }
+    max-width: 30rem;
+    max-height: 20rem;
 `;
 
 const MainCoverImg = styled.img`

@@ -1,20 +1,46 @@
-import React, { useState } from 'react';
-import NavBox from './NavBox';
-import {
-  Navigation, Toggle, Hamburger,
-} from '../../styles/styledComponents/NavbarStyledComponents';
+import React from 'react';
+import styled from 'styled-components';
 
-const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+const Navigation = styled.nav`
+    height: 10vh;
+    display: flex;
+    overflow: hidden;
+    padding: 0 5vw;
 
-  return (
-    <Navigation>
-      <Toggle navbarOpen={navbarOpen} onClick={() => setNavbarOpen(!navbarOpen)}>
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
-      </Toggle>
-      {navbarOpen && (<NavBox />)}
-    </Navigation>
-  );
-};
+    @media (max-width: 768px) {
+        position: sticky;
+        height: 8vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        left: 0;
+    }
+`;
+
+const NavLogo = styled.div`
+  height: 100%;
+  width: 30vw;
+  display: flex;
+  align-items: center;
+`;
+
+const NavLogoTitle = styled.h2`
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+`;
+
+const NavLogoImg = styled.img`
+  height: 100%;
+`;
+
+const Navbar = () => (
+  <Navigation>
+    <NavLogo>
+      <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" />
+      <NavLogoTitle>JAVI REQUEJO</NavLogoTitle>
+    </NavLogo>
+  </Navigation>
+);
 
 export default Navbar;

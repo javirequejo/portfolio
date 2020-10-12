@@ -18,7 +18,7 @@ const AboutDescriptionP = styled.p`
 const AboutDescriptionContainer = () => (
   <AboutDescriptionDiv>
     <AboutDescriptionP>
-      I am a talented full stack developer living in London
+      I am a full stack developer living in London
       <span role="img" aria-label="uk-flag">🇬🇧</span>
       currently working for a spanish startup:
       {' '}

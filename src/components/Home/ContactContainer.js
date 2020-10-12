@@ -22,7 +22,11 @@ const ContactContainer = () => (
     <ContactP>
       If you're reading this, we can talk!
       <br />
-      You can send me an email or find me on my social accounts:
+      You can send me an
+      {' '}
+      <a href="mailto:javierrequejomelchor@gmail.com">email</a>
+      {' '}
+      or find me on my social accounts:
       <br />
     </ContactP>
     <SocialIconsContainer>

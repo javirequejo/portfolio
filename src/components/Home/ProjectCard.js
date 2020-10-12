@@ -6,7 +6,7 @@ const CardDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34vw;
+    width: 28vw;
     height: 40vh;
     border-radius: 20px;
     overflow: hidden;

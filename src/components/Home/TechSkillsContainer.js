@@ -14,7 +14,6 @@ import symfonyIcon from '../../images/icons/symfony-icon.png';
 
 const TechSkillsDiv = styled.div`
     padding: 4vh 5vw;
-    
 `;
 
 const TechSkillsBox = styled.div`

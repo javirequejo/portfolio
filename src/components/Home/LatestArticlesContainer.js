@@ -7,9 +7,9 @@ const ArticlesContainer = styled.div`
 
 const ArticlesGrid = styled.div`
     margin-top: 5vh;
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 5vh 2vw;
+    grid-gap: 4vh 2vw;
 `;
 
 const SingleArticleBox = styled.div`
@@ -17,7 +17,7 @@ const SingleArticleBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 34vw;
+    width: 28vw;
     height: 30vh;
     border-radius: 20px;
     overflow: hidden;

@@ -4,11 +4,10 @@ import ProjectCard from './ProjectCard';
 import projects from '../../data/projects';
 
 const ProjectsGrid = styled.div`
-    width: 80vw;
     padding: 4vh 5vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2vh 2vw;
+    grid-gap: 4vh 2vw;
 `;
 
 const ProjectsContainer = () => (

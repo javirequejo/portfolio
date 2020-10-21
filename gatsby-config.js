@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Javi Requejo - Full Stack Developer',
-    author: 'Javi Requejo'
+    author: 'Javi Requejo',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -12,7 +12,7 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/src/posts`,
-      }
+      },
     },
     {
       resolve: 'gatsby-source-filesystem',
@@ -23,10 +23,10 @@ module.exports = {
     },
     'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-styled-components`,
+      resolve: 'gatsby-plugin-styled-components',
       options: {
         // Add any options here
       },
-    }
-  ]
-}
+    },
+  ],
+};

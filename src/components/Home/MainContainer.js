@@ -5,7 +5,7 @@ const MainContainerDiv = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    padding-top: 5vh;
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
@@ -15,7 +15,7 @@ const MainContainerDiv = styled.div`
 
 const MainDivTitle = styled.div`
     min-width: 34rem;
-    padding: 10vh 4vw 2vh;
+    padding: 4vh 4vw;
     @media (max-width: 1100px) {
       min-width: 25rem;
     }

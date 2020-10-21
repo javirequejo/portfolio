@@ -3,41 +3,45 @@ import styled from 'styled-components';
 import AboutTitle from './AboutTitle';
 
 const StacksMainContainer = styled.div`
-  padding: 4vh 5vw;
+  padding: 6vh 5vw;
   display: flex;
   flex-direction: column;
 `;
 
-const StacksDiv = styled.div`
-  padding: 5vh 0 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 0.5rem;
-`;
-
-const SingleStack = styled.div`
-  box-shadow: 0 0 4px #000000;
-  height: 10vh;
+const StackProgressDiv = styled.div`
+  margin-top: 2vh;
+  border-radius: 6px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 4rem;
+  overflow:hidden;
 `;
 
-const SingleStackH4 = styled.h4`
-  font-size: 1.5rem;
+const StackProgressBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: ${(props) => (props.red ? props.theme.colors.red : props.theme.colors.primary)};
+`;
+
+const StackProgressP = styled.div`
+  color: ${(props) => props.theme.colors.white};
+  font:700 1.25rem sans-serif;
+  text-align: center; 
 `;
 
 const StacksContainer = () => (
   <StacksMainContainer>
     <AboutTitle>Profile</AboutTitle>
-    <StacksDiv>
-      <SingleStack>
-        <SingleStackH4>Frontend: 50%</SingleStackH4>
-      </SingleStack>
-      <SingleStack>
-        <SingleStackH4>Backend: 50%</SingleStackH4>
-      </SingleStack>
-    </StacksDiv>
+    <StackProgressDiv>
+      <StackProgressBar red>
+        <StackProgressP>Frontend 50%</StackProgressP>
+      </StackProgressBar>
+
+      <StackProgressBar>
+        <StackProgressP>Backend 50%</StackProgressP>
+      </StackProgressBar>
+    </StackProgressDiv>
   </StacksMainContainer>
 );
 

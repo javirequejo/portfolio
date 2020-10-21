@@ -19,13 +19,15 @@ const TechSkillsDiv = styled.div`
 const TechSkillsBox = styled.div`
     padding: 5vh 2vw 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 3rem;
+    align-items: center;
+    justify-items: center;
 `;
 
 const SingleTechSkill = styled.img`
-    max-height: 18vh;
-    max-width: 12vw;
+    max-height: 6rem;
+    max-width: 4rem;
 `;
 
 const TechSkillsContainer = () => (

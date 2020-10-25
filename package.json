@@ -1,9 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "name": "portfolio",
+  "description": "Javi Requejo Portfolio",
   "version": "0.1.0",
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd -f .env.development gatsby develop",
@@ -15,7 +13,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.24.9",
+    "gatsby": "^2.24.85",
     "gatsby-image": "^2.4.13",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.21",
@@ -28,6 +26,7 @@
     "styled-components": "^5.1.1"
   },
   "devDependencies": {
+    "babel-preset-gatsby": "^0.5.14",
     "env-cmd": "^10.1.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb": "^18.2.0",
@@ -35,7 +34,8 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.5",
     "eslint-plugin-react-hooks": "^4.0.8",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "webpack": "^5.2.0"
   },
   "repository": {
     "type": "git",

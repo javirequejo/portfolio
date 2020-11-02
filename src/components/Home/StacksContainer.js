@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import styled from 'styled-components';
 import AboutTitle from './AboutTitle';
@@ -21,11 +22,11 @@ const StackProgressBar = styled.div`
   align-items: center;
   justify-content: center;
   width: 50%;
-  background-color: ${(props) => (props.red ? props.theme.colors.red : props.theme.colors.primary)};
+  background-color: ${(props) => props.bgColor};
 `;
 
 const StackProgressP = styled.div`
-  color: ${(props) => props.theme.colors.white};
+  color: '#e9fff9';
   font:700 1.25rem sans-serif;
   text-align: center; 
 `;
@@ -34,11 +35,11 @@ const StacksContainer = () => (
   <StacksMainContainer>
     <AboutTitle>Profile</AboutTitle>
     <StackProgressDiv>
-      <StackProgressBar red>
+      <StackProgressBar bgColor="#1d3354">
         <StackProgressP>Frontend 50%</StackProgressP>
       </StackProgressBar>
 
-      <StackProgressBar>
+      <StackProgressBar bgColor="#d64045">
         <StackProgressP>Backend 50%</StackProgressP>
       </StackProgressBar>
     </StackProgressDiv>

@@ -13,7 +13,7 @@ export default [
   {
     key: 2,
     title: 'Hipstereddit',
-    image: 'http://placeimg.com/840/480/tech',
+    image: 'https://placeimg.com/840/480/tech',
     description: 'App to view reddit subs in an alternative way.',
     frontStack: ['Javascript', 'React'],
     backStack: [],
@@ -24,7 +24,7 @@ export default [
   {
     key: 3,
     title: 'Musicland',
-    image: 'http://placeimg.com/841/481/tech',
+    image: 'https://placeimg.com/841/481/tech',
     description: 'Telegram bot that shows you the best Spotify playlists.',
     frontStack: [],
     backStack: ['Node.js', 'Express', 'Telegram API', 'Spotify API'],

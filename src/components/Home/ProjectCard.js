@@ -4,10 +4,11 @@ import styled from 'styled-components';
 const CardDiv = styled.div`
     position: relative;
     width: 28vw;
-    height: 44vh;
+    height: 50vh;
     border-radius: 20px;
     overflow: hidden;
     background-color: #fff;
+    color: #2b5876;
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
     ::-webkit-scrollbar {
         width: 0.3rem;
@@ -28,7 +29,7 @@ const CardFront = styled.div`
 
 const CardImg = styled.img`
     max-width: 100%;
-    height: 60%;
+    height: 50%;
 `;
 
 const CardTagsContainer = styled.div`
@@ -77,6 +78,7 @@ const ProjectCard = ({
       {!inHover && (
         <CardFront>
           <CardImg src={image} alt={title} />
+          <h3>{title}</h3>
           <CardTagsContainer>
             {frontStack.length > 0
             && frontStack.map((stack) => <CardStackTag key={stack}>{stack}</CardStackTag>)}

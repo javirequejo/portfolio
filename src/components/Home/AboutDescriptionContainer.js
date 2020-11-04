@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 const AboutDescriptionDiv = styled.div`
   padding: 2vh 0;
@@ -22,7 +21,7 @@ const AboutDescriptionContainer = () => (
       <span role="img" aria-label="uk-flag">🇬🇧</span>
       currently working for a spanish startup:
       {' '}
-      <Link to="https://alternaonline.es/">Alterna Online</Link>
+      <a target="_blank" rel="noreferrer" href="https://alternaonline.es/">Alterna Online</a>
       <br />
       I mainly work with Javascript (React & Node.js)
       but I also have experience working with PHP (Symfony) and others.

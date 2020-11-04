@@ -25,8 +25,8 @@ const StackProgressBar = styled.div`
   background-color: ${(props) => props.bgColor};
 `;
 
-const StackProgressP = styled.div`
-  color: '#e9fff9';
+const StackProgressP = styled.p`
+  color: #e9fff9;
   font:700 1.25rem sans-serif;
   text-align: center; 
 `;

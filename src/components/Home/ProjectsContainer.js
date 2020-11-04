@@ -12,14 +12,7 @@ const ProjectsGrid = styled.div`
 
 const ProjectsContainer = () => (
   <ProjectsGrid>
-    {projects.map((elem) => (
-      <ProjectCard
-        image={elem.image}
-        title={elem.title}
-        description={elem.description}
-        key={elem.key}
-      />
-    ))}
+    {projects.map((elem) => (<ProjectCard {...elem} />))}
   </ProjectsGrid>
 );
 

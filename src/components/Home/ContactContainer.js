@@ -24,7 +24,7 @@ const ContactContainer = () => (
       <br />
       You can send me an
       {' '}
-      <a href="mailto:javierrequejomelchor@gmail.com">email</a>
+      <a target="_blank" rel="noreferrer" href="mailto:javierrequejomelchor@gmail.com">email</a>
       {' '}
       or find me on my social accounts:
       <br />

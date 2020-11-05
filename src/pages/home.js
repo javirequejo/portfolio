@@ -30,22 +30,22 @@ const Home = () => (
       <MainContainer />
     </PageSection>
     <PageSection slim>
-      <H2Title title="...and what do you do?" />
+      <H2Title title="...and what do you do? 💻" />
       <AboutDescriptionContainer />
       <StacksContainer />
       <TechSkillsContainer />
       <ResumeContainer />
     </PageSection>
     <PageSection slim>
-      <H2Title title="...projects I'm working on" />
+      <H2Title title="...projects I'm working on 💪" />
       <ProjectsContainer />
     </PageSection>
     <PageSection slim>
-      <H2Title title="...my writings" />
+      <H2Title title="...my writings 📝" />
       <LatestArticlesContainer />
     </PageSection>
     <PageSection slim>
-      <H2Title title="...and let's talk" />
+      <H2Title title="...and let's talk 💌" />
       <ContactContainer />
     </PageSection>
   </HomeDiv>

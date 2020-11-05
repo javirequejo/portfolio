@@ -25,7 +25,7 @@ const NavLogoTitle = styled.h2`
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0;
-  color: ${(props) => props.theme.colors.primary};
+  color: #e9fff9;
   &::hover {
     text-decoration: none;
     color: red;

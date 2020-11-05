@@ -16,7 +16,7 @@ const ResumeContainer = () => (
     <ResumeP>
       Here you can find my resume in
       {' '}
-      <a target="_blank" rel="noreferrer" href="https://res.cloudinary.com/dls511fr9/image/upload/v1602499044/portfolio/Javier_Requejo_Resume.pdf">PDF</a>
+      {/* <a target="_blank" rel="noreferrer" href="https://res.cloudinary.com/dls511fr9/image/upload/v1602499044/portfolio/Javier_Requejo_Resume.pdf">PDF</a> */}
     </ResumeP>
   </ResumeDiv>
 );

@@ -14,7 +14,7 @@ const SocialIconsContainer = styled.div`
     padding: 2vh 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
 `;
 
 const ContactContainer = () => (

@@ -7,7 +7,7 @@ const IconDiv = styled.div`
 `;
 
 const IconImg = styled.img`
-    width: 100%;
+    width: 40%;
 `;
 
 const SocialIcon = (props) => {

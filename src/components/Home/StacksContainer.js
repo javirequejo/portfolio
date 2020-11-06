@@ -27,8 +27,11 @@ const StackProgressBar = styled.div`
 
 const StackProgressP = styled.p`
   color: #e9fff9;
-  font:700 1.25rem sans-serif;
-  text-align: center; 
+  font: 700 1.25rem;
+  text-align: center;
+  @media (max-width: 768px) {
+    font: 700 1rem;
+  }
 `;
 
 const StacksContainer = () => (

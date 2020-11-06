@@ -4,17 +4,25 @@ import SocialIcon from './SocialIcon';
 
 const ContactDiv = styled.div`  
   padding: 4vh 5vw;
+  @media (max-width: 768px) {
+    padding: 2vh 5vw;
+  }
 `;
 
 const ContactP = styled.p`
-
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
 `;
 
 const SocialIconsContainer = styled.div`
-    padding: 2vh 2vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    padding: 2vh 2vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    @media (max-width: 768px) {
+      justify-content: space-around;
+    }
 `;
 
 const ContactContainer = () => (

@@ -9,7 +9,6 @@ const MainContainerDiv = styled.div`
     @media (max-width: 768px) {
         flex-direction: column;
         justify-content: center;
-        font-size: 2rem;
     }
 `;
 
@@ -21,6 +20,7 @@ const MainDivTitle = styled.div`
     }
     @media (max-width: 768px) {
       min-width: 0;
+      padding: 2vh 4vw;
     }
 `;
 
@@ -28,11 +28,17 @@ const MainH1Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     border-radius: 0.1em;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
 `;
 
 const MainImgDiv = styled.div`
     max-width: 30rem;
     max-height: 20rem;
+    @media (max-width: 768px) {
+      max-width: 18rem;
+    }
 `;
 
 const MainCoverImg = styled.img`

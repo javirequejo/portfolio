@@ -3,6 +3,15 @@ import styled from 'styled-components';
 
 const ArticlesContainer = styled.div`
   padding: 4vh 5vw;
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    padding: 2vh 5vw;
+  }
+  & p {
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
 `;
 
 const ArticlesGrid = styled.div`
@@ -10,6 +19,9 @@ const ArticlesGrid = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4vh 2vw;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 `;
 
 const SingleArticleBox = styled.div`
@@ -29,6 +41,10 @@ const SingleArticleBox = styled.div`
     ::-webkit-scrollbar-thumb {
         background-color: #fff;
         border-radius: 50px;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      height: 36vh;
     }
 `;
 

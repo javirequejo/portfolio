@@ -17,6 +17,9 @@ const CardDiv = styled.div`
         background-color: #fff;
         border-radius: 50px;
     }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 `;
 
 const CardFront = styled.div`
@@ -37,7 +40,7 @@ const CardTagsContainer = styled.div`
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 10px;
 `;
 
 const CardStackTag = styled.span`

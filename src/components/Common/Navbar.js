@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
+import NavLogo from './NavLogo';
 
 const Navigation = styled.nav`
   height: 10vh;
@@ -14,36 +15,10 @@ const Navigation = styled.nav`
   }
 `;
 
-const NavLogo = styled.div`
-  height: 100%;
-  width: 30vw;
-  display: flex;
-  align-items: center;
-`;
-
-const NavLogoTitle = styled.h2`
-  font-family: 'Concert One', cursive;
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin: 0;
-  color: #f8c630;
-  &::hover {
-    text-decoration: none;
-    color: red;
-  }
-`;
-
-const NavLogoImg = styled.img`
-  height: 100%;
-`;
-
 const Navbar = () => (
   <Navigation>
     <Link to="/">
-      <NavLogo>
-        <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" />
-        <NavLogoTitle>JAVI REQUEJO</NavLogoTitle>
-      </NavLogo>
+      <NavLogo />
     </Link>
   </Navigation>
 );

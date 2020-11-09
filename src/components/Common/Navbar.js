@@ -11,7 +11,7 @@ const Navigation = styled.nav`
   margin: 2vh 0;
 
   @media (max-width: 768px) {
-    height: 8vh;
+    margin-top: 2vh;
   }
 `;
 

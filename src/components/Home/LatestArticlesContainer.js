@@ -30,7 +30,7 @@ const SingleArticleBox = styled.div`
     align-items: center;
     justify-content: center;
     width: 24vw;
-    height: 36vh;
+    height: 40vh;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;

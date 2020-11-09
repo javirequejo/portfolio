@@ -22,10 +22,11 @@ const NavLogo = styled.div`
 `;
 
 const NavLogoTitle = styled.h2`
-  font-size: 1.2rem;
+  font-family: 'Concert One', cursive;
+  font-size: 1.4rem;
   font-weight: 800;
   margin: 0;
-  color: #dbe4ee;
+  color: #f8c630;
   &::hover {
     text-decoration: none;
     color: red;

@@ -19,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
     ul {
         list-style-type: none;
     }
+
+    .yellow-text {
+        color: #f8c630;
+    }
 `;
 
 export default GlobalStyle;

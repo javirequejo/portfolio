@@ -28,7 +28,7 @@ const MainH1Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     border-radius: 0.1em;
-    color: #f8c630;
+    color: #f2f2f2;
     @media (max-width: 768px) {
       font-size: 1.8rem;
     }
@@ -51,7 +51,9 @@ const MainContainer = () => (
   <MainContainerDiv>
     <MainDivTitle>
       <MainH1Title>
-        Hello, I'm Javi
+        Hello, I'm
+        {' '}
+        <span className="yellow-text">Javi</span>
         <span role="img" aria-label="computer-boy">👨🏽‍💻</span>
         <br />
         a Full Stack Developer

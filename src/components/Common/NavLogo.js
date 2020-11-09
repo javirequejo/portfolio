@@ -13,9 +13,9 @@ const NavLogoImg = styled.img`
 `;
 
 const NavLogoTitle = styled.h2`
-  font-size: 1.4rem;
-  transform: skew(-7deg);
-  font-family: 'Pragati Narrow', sans-serif;
+  font-family: 'Permanent Marker', cursive;
+  transform: skew(-12deg, -3deg);
+  margin-top: 4vh;
   margin-left: 0.5vw;
   color: #f8c630;
 `;

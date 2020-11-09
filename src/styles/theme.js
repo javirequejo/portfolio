@@ -2,7 +2,7 @@ const mainTheme = {
   colors: {
     primary: '#1d3354',
     pale: '#9ed8db',
-    white: '#e9fff9',
+    white: '#dbe4ee',
     red: '#d64045',
   },
 };

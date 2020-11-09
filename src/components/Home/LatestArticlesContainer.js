@@ -29,8 +29,8 @@ const SingleArticleBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28vw;
-    height: 30vh;
+    width: 24vw;
+    height: 36vh;
     border-radius: 20px;
     overflow: hidden;
     z-index: 1;

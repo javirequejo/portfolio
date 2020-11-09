@@ -7,8 +7,9 @@ const TitleContainer = styled.div`
 
 export const SectionTitle = styled.h2`
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
+    color: #f8c630;
     @media (max-width: 768px) {
       font-size: 1.4rem;
     }

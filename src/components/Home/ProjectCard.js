@@ -3,18 +3,18 @@ import styled from 'styled-components';
 
 const CardDiv = styled.div`
     position: relative;
-    width: 28vw;
+    width: 24vw;
     height: 50vh;
     border-radius: 20px;
     overflow: hidden;
-    background-color: #fff;
-    color: #2b5876;
+    background-color: #d8f2fe;
+    color: #141e30;
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
     ::-webkit-scrollbar {
         width: 0.3rem;
     }
     ::-webkit-scrollbar-thumb {
-        background-color: #fff;
+        background-color: #d8f2fe;
         border-radius: 50px;
     }
     @media (max-width: 768px) {
@@ -44,9 +44,9 @@ const CardTagsContainer = styled.div`
 `;
 
 const CardStackTag = styled.span`
-    background: ${(props) => (props.black ? 'black' : props.red ? '#d64045' : '#2b5876')};
+    background: ${(props) => (props.black ? '#141e30' : props.red ? '#d64045' : '#f8c630')};
     padding: 4px 10px;
-    color: #e9fff9;
+    color: ${(props) => (props.black ? '#f2f2f2' : props.red ? '#f2f2f2' : '#141e30;')};
     font-size: 0.9rem;
     margin: 0 10px 10px 0;
     border-radius: 10px;

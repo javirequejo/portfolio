@@ -3,11 +3,10 @@ import styled from 'styled-components';
 
 const IconDiv = styled.div`
     max-width: 10vw;
-    padding: 0 1.5vw;
 `;
 
 const IconImg = styled.img`
-    width: 40%;
+    width: 30%;
     @media (max-width: 768px) {
       width: 100%;
     }

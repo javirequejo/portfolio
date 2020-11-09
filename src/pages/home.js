@@ -45,7 +45,7 @@ const Home = () => (
       <LatestArticlesContainer />
     </PageSection>
     <PageSection slim>
-      <H2Title title="...and let's talk 💌" />
+      <H2Title title="...and let's talk 💬" />
       <ContactContainer />
     </PageSection>
   </HomeDiv>

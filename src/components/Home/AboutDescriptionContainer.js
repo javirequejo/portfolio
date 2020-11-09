@@ -21,7 +21,9 @@ const AboutDescriptionContainer = () => (
   <AboutDescriptionDiv>
     <AboutDescriptionP>
       I am a full stack developer living in London
+      {' '}
       <span role="img" aria-label="uk-flag">🇬🇧</span>
+      {' '}
       currently working for a spanish startup:
       {' '}
       <a target="_blank" rel="noreferrer" href="https://alternaonline.es/">Alterna Online</a>

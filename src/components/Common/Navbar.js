@@ -23,9 +23,9 @@ const NavLogo = styled.div`
 
 const NavLogoTitle = styled.h2`
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 800;
   margin: 0;
-  color: #e9fff9;
+  color: #dbe4ee;
   &::hover {
     text-decoration: none;
     color: red;

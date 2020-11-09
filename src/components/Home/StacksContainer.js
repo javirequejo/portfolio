@@ -26,7 +26,7 @@ const StackProgressBar = styled.div`
 `;
 
 const StackProgressP = styled.p`
-  color: #e9fff9;
+  color: #dbe4ee;
   font: 700 1.25rem;
   text-align: center;
   @media (max-width: 768px) {

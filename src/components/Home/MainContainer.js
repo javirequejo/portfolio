@@ -28,6 +28,7 @@ const MainH1Title = styled.h1`
     font-size: 3rem;
     font-weight: 700;
     border-radius: 0.1em;
+    color: #f8c630;
     @media (max-width: 768px) {
       font-size: 1.8rem;
     }

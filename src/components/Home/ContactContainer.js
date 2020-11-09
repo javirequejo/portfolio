@@ -39,16 +39,20 @@ const ContactContainer = () => (
     </ContactP>
     <SocialIconsContainer>
       <SocialIcon
-        socialLink="https://twitter.com/javirequejo_"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1595759560/portfolio/gorjeo.svg"
+        socialLink="https://github.com/javirequejo"
+        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/github-yellow.png"
       />
       <SocialIcon
         socialLink="https://www.linkedin.com/in/javier-requejo/"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1595759560/portfolio/linkedin.svg"
+        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/linkedin-yellow.png"
       />
       <SocialIcon
-        socialLink="https://github.com/javirequejo"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1595759560/portfolio/github.svg"
+        socialLink="https://twitter.com/javirequejo_"
+        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/twitter-yellow.png"
+      />
+      <SocialIcon
+        socialLink="https://t.me/javirequejo"
+        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/telegram-yellow.png"
       />
     </SocialIconsContainer>
   </ContactDiv>

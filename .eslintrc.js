@@ -23,5 +23,6 @@ module.exports = {
     'react/prop-types': 'off',
     'react/jsx-props-no-spreading': 'off',
     'no-nested-ternary': 'off',
+    'import/prefer-default-export': 'off',
   },
 };

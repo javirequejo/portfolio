@@ -1,4 +1,5 @@
 import React from 'react';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 import styled from 'styled-components';
 
 const ArticlesContainer = styled.div`
@@ -27,57 +28,88 @@ const ArticlesGrid = styled.div`
 const SingleArticleBox = styled.div`
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 24vw;
-    height: 40vh;
+    width: 26vw;
+    height: 50vh;
     border-radius: 20px;
     overflow: hidden;
-    z-index: 1;
+    background-color: #141e30;
+    color: #f8c630;
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
-    ::-webkit-scrollbar {
-        width: 0.3rem;
-    }
-    ::-webkit-scrollbar-thumb {
-        background-color: #fff;
-        border-radius: 50px;
-    }
     @media (max-width: 768px) {
       width: 100%;
       height: 36vh;
     }
 `;
 
-const SubArticleBox = styled.div`
-    height: 100%;
-    width: 100%;
-    box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;  
-    margin-bottom: -40vh;
-    text-align: center;
-    z-index: 9;
+const SubArticleImage = styled.img`
+    max-height: 50%;
 `;
 
-const LatestArticles = () => (
-  <ArticlesContainer>
-    <p>
-      Sometimes I write things related to programming and my life,
-      so these are the last articles:
-    </p>
-    <ArticlesGrid>
-      <SingleArticleBox>
-        <SubArticleBox>
-          <h4>This is the first title</h4>
-          <p>This is the article's description</p>
-        </SubArticleBox>
-      </SingleArticleBox>
-      <SingleArticleBox>
-        <SubArticleBox>
-          <h4>This is the first title</h4>
-          <p>This is the article's description</p>
-        </SubArticleBox>
-      </SingleArticleBox>
-    </ArticlesGrid>
-  </ArticlesContainer>
-);
+const SubArticleBox = styled.div`
+    height: 100%;
+    max-width: 100%;
+    padding: 1vh 1.5vw;
+    text-align: center;
+    z-index: 9;
+    & p {
+      color: #f2f2f2;
+      font-size: 0.9rem;
+    }
+`;
+
+const LatestArticles = () => {
+  const data = useStaticQuery(graphql`
+    query {
+        allMarkdownRemark(
+          sort: {
+            fields: [frontmatter___date, frontmatter___title]
+            order: [ASC, DESC]
+          }
+        ) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        description
+                        slug
+                        date
+                        image
+                    }
+                }
+            }
+        }
+    }
+`);
+  const posts = data.allMarkdownRemark.edges;
+
+  return (
+    <ArticlesContainer>
+      <p>
+        Sometimes I write things related to programming and my life,
+        so these are the last articles:
+      </p>
+      <ArticlesGrid>
+        {posts.map((elem) => {
+          const {
+            title, description, slug, image,
+          } = elem.node.frontmatter;
+          return (
+            <Link to={slug}>
+              <SingleArticleBox key={title}>
+                <SubArticleImage src={image} alt={title} />
+                <SubArticleBox>
+                  <h4>{title}</h4>
+                  <p>{description}</p>
+                </SubArticleBox>
+              </SingleArticleBox>
+            </Link>
+          );
+        })}
+      </ArticlesGrid>
+    </ArticlesContainer>
+  );
+};
 
 export default LatestArticles;

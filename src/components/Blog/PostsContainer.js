@@ -9,14 +9,14 @@ const PostsContainer = () => {
                 node {
                     frontmatter {
                         title
-                        date
+                        subtitle
+                        slug
                     }
                 }
             }
         }
     }
-    `);
-
+`);
   const posts = data.allMarkdownRemark.edges;
 
   return (

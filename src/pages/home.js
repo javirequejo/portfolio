@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import SEO from '../components/Common/seo';
 import H2Title from '../components/Home/H2Title';
 import MainContainer from '../components/Home/MainContainer';
 import ProjectsContainer from '../components/Home/ProjectsContainer';
@@ -26,6 +27,7 @@ const PageSection = styled.section`
 
 const Home = () => (
   <HomeDiv>
+    <SEO title="Javi Requejo - Full Stack Developer" />
     <PageSection>
       <MainContainer />
     </PageSection>

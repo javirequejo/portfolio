@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const IconDiv = styled.div`
-    max-width: 10vw;
+    max-width: 7vw;
 `;
 
 const IconImg = styled.img`

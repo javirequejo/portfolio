@@ -1,11 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import SocialIcon from './SocialIcon';
+import SocialIconsContainer from '../Common/SocialIconsContainer';
 
 const ContactDiv = styled.div`  
   padding: 4vh 5vw;
+  width: 100%;
+  & div {
+    width: 80%;
+  }
   @media (max-width: 768px) {
-    padding: 2vh 5vw;
+    padding: 2vh 2vw;
   }
 `;
 
@@ -14,17 +18,6 @@ const ContactP = styled.p`
     font-size: 1.1rem;
   }
 `;
-
-const SocialIconsContainer = styled.div`
-    padding: 2vh 2vw 0;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    @media (max-width: 768px) {
-      justify-content: space-around;
-    }
-`;
-
 const ContactContainer = () => (
   <ContactDiv>
     <ContactP>
@@ -37,24 +30,7 @@ const ContactContainer = () => (
       or find me on my social accounts:
       <br />
     </ContactP>
-    <SocialIconsContainer>
-      <SocialIcon
-        socialLink="https://github.com/javirequejo"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/github-yellow.png"
-      />
-      <SocialIcon
-        socialLink="https://www.linkedin.com/in/javier-requejo/"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/linkedin-yellow.png"
-      />
-      <SocialIcon
-        socialLink="https://twitter.com/javirequejo_"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/twitter-yellow.png"
-      />
-      <SocialIcon
-        socialLink="https://t.me/javirequejo"
-        iconLink="https://res.cloudinary.com/dls511fr9/image/upload/v1604933942/portfolio/social/telegram-yellow.png"
-      />
-    </SocialIconsContainer>
+    <SocialIconsContainer />
   </ContactDiv>
 );
 

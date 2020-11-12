@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const FooterParagraph = styled.p`
     padding: 2vh 8vw;
-    border-top: 1px solid;
+    border-top: 1px solid #243b55;
+    color: #243b55;
 `;
 
 const Footer = () => (

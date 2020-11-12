@@ -7,14 +7,15 @@ const MainContainerDiv = styled.div`
     align-items: center;
     padding-top: 5vh;
     @media (max-width: 768px) {
-        flex-direction: column;
-        justify-content: center;
+      flex-direction: column;
+      justify-content: center;
     }
-`;
+    `;
 
 const MainDivTitle = styled.div`
     min-width: 34rem;
-    padding: 4vh 4vw;
+    padding: 4vh 4vw;    
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     @media (max-width: 1100px) {
       min-width: 25rem;
     }
@@ -37,6 +38,7 @@ const MainH1Title = styled.h1`
 const MainImgDiv = styled.div`
     max-width: 30rem;
     max-height: 20rem;
+    animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     @media (max-width: 768px) {
       max-width: 18rem;
     }

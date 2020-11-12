@@ -16,7 +16,8 @@ const HomeDiv = styled.div`
 `;
 
 const PageSection = styled.section`
-    padding: ${(props) => (props.slim ? '5vh 14vw' : '5vh 10vw')} ;
+    padding: ${(props) => (props.slim ? '5vh 14vw' : '5vh 10vw')};
+    animation: ${(props) => (props.animation ? 'slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)' : 0)};
     background: no-repeat center center fixed;
     background-image: url(${(props) => (props.bg ? props.bg : 'none')});
 
@@ -31,22 +32,22 @@ const Home = () => (
     <PageSection>
       <MainContainer />
     </PageSection>
-    <PageSection slim>
+    <PageSection slim animation>
       <H2Title title="...and what do you do? 💻" />
       <AboutDescriptionContainer />
       <StacksContainer />
       <TechSkillsContainer />
       <ResumeContainer />
     </PageSection>
-    <PageSection slim>
+    <PageSection slim animation>
       <H2Title title="...projects I'm working on 💪" />
       <ProjectsContainer />
     </PageSection>
-    <PageSection slim>
+    <PageSection slim animation>
       <H2Title title="...my writings 📝" />
       <LatestArticlesContainer />
     </PageSection>
-    <PageSection slim>
+    <PageSection slim animation>
       <H2Title title="...and let's talk 💬" />
       <ContactContainer />
     </PageSection>

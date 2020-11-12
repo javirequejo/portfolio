@@ -53,7 +53,7 @@ const MainContainer = () => (
   <MainContainerDiv>
     <MainDivTitle>
       <MainH1Title>
-        Hello, I'm
+        Hello, I&apos;m
         {' '}
         <span className="yellow-text">Javi</span>
         <span role="img" aria-label="computer-boy">👨🏽‍💻</span>

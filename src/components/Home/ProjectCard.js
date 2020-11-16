@@ -4,11 +4,17 @@ import styled from 'styled-components';
 const CardDiv = styled.div`
     position: relative;
     width: 26vw;
-    height: 50vh;
+    height: 52vh;
     border-radius: 20px;
     background-color: #141e30;
     color: #f2f2f2;
+    overflow-y: auto;
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
+    &::-webkit-scrollbar-track {
+      border: 1px solid #000;
+      padding: 2px 0;
+      background-color: #141e30;
+    }
     @media (max-width: 768px) {
       width: 100%;
     }
@@ -20,6 +26,9 @@ const CardFront = styled.div`
     display: flex;
     flex-flow: column;
     align-items: center;
+    & h3 {
+      padding: 0 1rem;
+    }
 `;
 
 const CardImg = styled.img`
@@ -40,7 +49,7 @@ const CardStackTag = styled.span`
     padding: 4px 10px;
     color: ${(props) => (props.black ? '#141e30' : props.red ? '#f2f2f2' : '#141e30;')};
     font-size: 0.9rem;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 5px 0;
     border-radius: 10px;
 `;
 

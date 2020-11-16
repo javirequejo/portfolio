@@ -39,7 +39,7 @@ const SingleArticleBox = styled.div`
     box-shadow: rgba(0,0,0,0.22) 0px 15px 12px, rgba(0,0,0,0.3) 0px 19px 38px;
     @media (max-width: 768px) {
       width: 100%;
-      height: 36vh;
+      height: 42vh;
     }
 `;
 
@@ -91,22 +91,25 @@ const LatestArticles = () => {
         so these are the last articles:
       </p>
       <ArticlesGrid>
-        {posts.map((elem) => {
-          const {
-            title, description, slug, image,
-          } = elem.node.frontmatter;
-          return (
-            <Link to={slug}>
-              <SingleArticleBox key={title}>
-                <SubArticleImage src={image} alt={title} />
-                <SubArticleBox>
-                  <h4>{title}</h4>
-                  <p>{description}</p>
-                </SubArticleBox>
-              </SingleArticleBox>
-            </Link>
-          );
-        })}
+        {posts
+          // eslint-disable-next-line max-len
+          .reverse()
+          .map((elem) => {
+            const {
+              title, description, slug, image,
+            } = elem.node.frontmatter;
+            return (
+              <Link to={slug} key={title}>
+                <SingleArticleBox>
+                  <SubArticleImage src={image} alt={title} />
+                  <SubArticleBox>
+                    <h4>{title}</h4>
+                    <p>{description}</p>
+                  </SubArticleBox>
+                </SingleArticleBox>
+              </Link>
+            );
+          })}
       </ArticlesGrid>
     </ArticlesContainer>
   );

@@ -42,14 +42,20 @@ const PostCoverImg = styled.img`
 const PostContent = styled.article`
     padding: 0 2vw;
     margin-top: 8vh;
-    & p {
+    & h2 {
+      margin: 8vh 0 4vh 0;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    & p, & li {
       font-family: 'Merriweather', serif;
       font-weight: 300;
       font-size: 1.3rem;
-      line-height: 1.7
+      line-height: 1.7;
+      list-style-type: circle;
     }
-    & p + p {
-      margin-top: 8vh;
+    & p + p, & li + li {
+      margin-top: 4vh;
     }
 `;
 

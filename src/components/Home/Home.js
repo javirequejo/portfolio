@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
-import SEO from '../components/Common/seo';
-import H2Title from '../components/Home/H2Title';
-import MainContainer from '../components/Home/MainContainer';
-import ProjectsContainer from '../components/Home/ProjectsContainer';
-import AboutDescriptionContainer from '../components/Home/AboutDescriptionContainer';
-import StacksContainer from '../components/Home/StacksContainer';
-import TechSkillsContainer from '../components/Home/TechSkillsContainer';
-import ResumeContainer from '../components/Home/ResumeContainer';
-import LatestArticlesContainer from '../components/Home/LatestArticlesContainer';
-import ContactContainer from '../components/Home/ContactContainer';
+import SEO from '../Common/seo';
+import H2Title from './H2Title';
+import MainContainer from './MainContainer';
+import ProjectsContainer from './ProjectsContainer';
+import AboutDescriptionContainer from './AboutDescriptionContainer';
+import StacksContainer from './StacksContainer';
+import TechSkillsContainer from './TechSkillsContainer';
+import ResumeContainer from './ResumeContainer';
+import LatestArticlesContainer from './LatestArticlesContainer';
+import ContactContainer from './ContactContainer';
 
 const HomeDiv = styled.div`
 

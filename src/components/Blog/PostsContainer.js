@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery, Link } from 'gatsby';
 
 const PostsContainer = () => {
   const data = useStaticQuery(graphql`
@@ -9,7 +9,7 @@ const PostsContainer = () => {
                 node {
                     frontmatter {
                         title
-                        subtitle
+                        description
                         slug
                     }
                 }
@@ -20,14 +20,15 @@ const PostsContainer = () => {
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <ol>
-      {posts.map((elem) => (
+    <ul>
+      {posts.reverse().map((elem) => (
         <li key={elem.node.frontmatter.title}>
-          <h2>{elem.node.frontmatter.title}</h2>
-          <p>{elem.node.frontmatter.date}</p>
+          <Link to={elem.node.frontmatter.slug}>
+            <h2 style={{ color: '#f8c630' }}>{elem.node.frontmatter.title}</h2>
+          </Link>
         </li>
       ))}
-    </ol>
+    </ul>
 
   );
 };

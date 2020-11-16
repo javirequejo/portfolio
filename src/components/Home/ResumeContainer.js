@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import AboutTitle from './AboutTitle';
 
+const RESUME_LINK = 'https://res.cloudinary.com/dls511fr9/image/upload/v1605533386/portfolio/Javier_Requejo_Resume.pdf';
+
 const ResumeDiv = styled.div`
   padding: 4vh 5vw;
 `;
@@ -21,7 +23,7 @@ const ResumeButton = styled.a`
 const ResumeContainer = () => (
   <ResumeDiv>
     <AboutTitle>Resume</AboutTitle>
-    <ResumeButton target="_blank" rel="noreferrer" href="https://res.cloudinary.com/dls511fr9/image/upload/v1602499044/portfolio/Javier_Requejo_Resume.pdf">
+    <ResumeButton target="_blank" rel="noreferrer" href={RESUME_LINK}>
       Download PDF
     </ResumeButton>
   </ResumeDiv>

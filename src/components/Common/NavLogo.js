@@ -7,8 +7,6 @@ const NavLogoContainer = styled.div`
   padding: 0.5vh 0.5vw;
   display: flex;
   align-items: center;
-  border: 2px solid #f8c630;
-  border-radius: 10px;
   @media (max-width: 768px) {
     padding: 1vh 2vw;
   }

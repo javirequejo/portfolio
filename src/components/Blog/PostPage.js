@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import styled, { ThemeProvider } from 'styled-components';
-import mainTheme from '../../styles/theme';
+import styled from 'styled-components';
 import SEO from '../Common/seo';
 import GlobalStyle from '../../styles/styledComponents/GlobalStyle';
 import Layout from '../Common/Layout';
@@ -61,7 +60,7 @@ const PostPage = ({ data }) => {
     title, description, image, slug,
   } = post.frontmatter;
   return (
-    <ThemeProvider theme={mainTheme}>
+    <>
       <GlobalStyle />
       <SEO title={title} />
       <Layout>
@@ -71,7 +70,7 @@ const PostPage = ({ data }) => {
           <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </PostPageContainer>
       </Layout>
-    </ThemeProvider>
+    </>
   );
 };
 

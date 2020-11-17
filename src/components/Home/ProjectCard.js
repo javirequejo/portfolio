@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const CardDiv = styled.div`
     position: relative;
     width: 26vw;
+    max-width: 400px;
     height: 46vh;
     border-radius: 20px;
     background-color: #141e30;
@@ -29,6 +30,7 @@ const CardFront = styled.div`
     align-items: center;
     & h3 {
       padding: 0 1rem;
+      margin-top: 3rem;
     }
 `;
 

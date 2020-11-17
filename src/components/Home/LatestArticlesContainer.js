@@ -31,6 +31,7 @@ const SingleArticleBox = styled.div`
     flex-direction: column;
     align-items: center;
     width: 26vw;
+    max-width: 400px;
     height: 50vh;
     border-radius: 20px;
     overflow: hidden;
@@ -56,9 +57,10 @@ const SubArticleImageContainer = styled.div`
 const SubArticleBox = styled.div`
     height: 100%;
     max-width: 100%;
-    padding: 1vh 1.5vw;
+    padding: 1vh 2vw;
     text-align: center;
     z-index: 9;
+    margin-top: 1rem;
     & h4 {
       font-size: 1.1em;
     }

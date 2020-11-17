@@ -73,7 +73,7 @@ const CardInner = styled.div`
 `;
 
 const ProjectCard = ({
-  image, title, description, frontStack, backStack, githubUrl, liveUrl,
+  image, title, description, frontStack, backStack, githubUrl, liveUrl, videoUrl,
 }) => {
   const [inHover, setHover] = useState(false);
 
@@ -101,6 +101,7 @@ const ProjectCard = ({
               <p>{description}</p>
               {githubUrl && (<a target="_blank" rel="noreferrer" href={githubUrl}><CardStackTag yellow>Github</CardStackTag></a>)}
               {liveUrl && (<a target="_blank" rel="noreferrer" href={liveUrl}><CardStackTag red>Live demo</CardStackTag></a>)}
+              {videoUrl && (<a target="_blank" rel="noreferrer" href={videoUrl}><CardStackTag red>Youtube</CardStackTag></a>)}
             </CardInner>
             )}
     </CardDiv>

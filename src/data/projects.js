@@ -8,7 +8,7 @@ export default [
     backStack: ['Node.js', 'Express', 'MongoDB', 'Google Cloud Vision API'],
     liveUrl: '',
     githubUrl: 'https://github.com/story-land',
-    video: '',
+    videoUrl: 'https://www.youtube.com/watch?v=O8Jdkxat4Pc',
   },
   {
     key: 2,
@@ -19,7 +19,7 @@ export default [
     backStack: [],
     liveUrl: '',
     githubUrl: 'https://github.com/javirequejo/hipstereddit',
-    video: null,
+    videoUrl: null,
   },
   {
     key: 3,
@@ -30,7 +30,7 @@ export default [
     backStack: ['Node.js', 'Express', 'Telegram API', 'Spotify API'],
     liveUrl: '',
     githubUrl: 'https://github.com/javirequejo/musicland',
-    video: null,
+    videoUrl: null,
   },
   {
     key: 4,
@@ -41,6 +41,6 @@ export default [
     backStack: [],
     liveUrl: 'https://javirequejo.github.io/pokemon-league/',
     githubUrl: 'https://github.com/javirequejo/pokemon-league',
-    video: null,
+    videoUrl: null,
   },
 ];

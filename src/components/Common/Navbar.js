@@ -10,7 +10,7 @@ const Navigation = styled.nav`
   margin: 2vh 0;
   display: flex;
   justify-content: space-between;
-  & a {
+  & .logoLink {
     max-width: 40%;
   }
   @media (max-width: 768px) {
@@ -20,7 +20,7 @@ const Navigation = styled.nav`
 
 const Navbar = () => (
   <Navigation>
-    <Link to="/">
+    <Link className="logoLink" to="/">
       <NavLogo />
     </Link>
     <SocialIconsContainer />

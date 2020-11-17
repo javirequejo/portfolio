@@ -9,7 +9,7 @@ const SocialIconsDiv = styled.div`
     justify-content: start;
     @media (max-width: 768px) {
       justify-content: space-around;
-      width: 50%;
+      max-width: 50%;
     }
 `;
 

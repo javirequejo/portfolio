@@ -19,7 +19,7 @@ const NavLogoImg = styled.img`
 const NavLogoTitleImg = styled.img`
   height: 25px;
   max-width: 80%;
-  margin-left: 1.5vw;
+  margin-left: 1vw;
 `;
 
 const NavLogo = () => (

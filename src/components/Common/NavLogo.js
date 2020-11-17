@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NavLogoContainer = styled.div`
+  width: 100%;
   height: 85%;
   float: left;
   padding: 0.5vh 0.5vw;

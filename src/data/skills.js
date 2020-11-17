@@ -2,7 +2,7 @@ export default [
   {
     key: 1,
     alt: 'Javascript',
-    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1602460268/portfolio/skills/js-icon.png',
+    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605626304/portfolio/skills/js-icon.png',
   },
   {
     key: 2,
@@ -17,7 +17,7 @@ export default [
   {
     key: 4,
     alt: 'HTML',
-    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605572390/portfolio/skills/html-icon.png',
+    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605626304/portfolio/skills/html-icon.png',
   },
   {
     key: 5,
@@ -32,12 +32,12 @@ export default [
   {
     key: 7,
     alt: 'PHP',
-    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605572390/portfolio/skills/php-icon.png',
+    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605626304/portfolio/skills/php-icon.png',
   },
   {
     key: 8,
     alt: 'Symfony',
-    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605572390/portfolio/skills/symfony-icon.png',
+    src: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605626303/portfolio/skills/symfony-icon.png',
   },
   {
     key: 9,

@@ -2,7 +2,6 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable jsx-a11y/html-has-lang */
 import React from 'react';
-import PropTypes from 'prop-types';
 
 export default function HTML(props) {
   return (

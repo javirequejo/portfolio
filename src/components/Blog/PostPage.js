@@ -33,6 +33,10 @@ const PostPageContainer = styled.div`
 
 const PostTitle = styled.h1`
     color: #f8c630;
+    @media (max-width: 768px) {
+      padding: 0 6vw;
+      font-size: 1.5rem;
+    }
 `;
 
 const PostCoverImg = styled.img`
@@ -43,21 +47,33 @@ const PostContent = styled.article`
     padding: 0 2vw;
     margin-top: 8vh;
     & h2 {
-      margin: 8vh 0 4vh 0;
-      margin-top: 4rem;
-      margin-bottom: 4rem;
+      margin: 4rem 0;
     }
     & p, & li {
       font-family: 'Merriweather', serif;
       font-weight: 300;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       line-height: 1.7;
       list-style-type: circle;
     }
     & p + p, & li + li {
-      margin-top: 4vh;
+      margin-top: 2rem;
     }
-`;
+    @media (max-width: 768px) {
+      padding: 0 2vw;
+      width: 85%;
+      & p, & li {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        list-style-type: circle;
+      }
+      & h2 {
+        margin: 3rem 0;
+      }
+    }
+    `;
 
 const PostPage = ({ data }) => {
   const post = data.markdownRemark;

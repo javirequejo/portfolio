@@ -12,9 +12,9 @@ I decided to take programming in a professional way when I started a web develop
 
 (These are the links of the project I will be talking about)
 
--Code repository: [https://github.com/javirequejo/pokemon-league](https://github.com/javirequejo/pokemon-league)
+- Code repository: [https://github.com/javirequejo/pokemon-league](https://github.com/javirequejo/pokemon-league)
 
--Live demo: [https://javirequejo.github.io/pokemon-league/](https://javirequejo.github.io/pokemon-league/)
+- Live demo: [https://javirequejo.github.io/pokemon-league/](https://javirequejo.github.io/pokemon-league/)
 
 And well, it's right. If we review the code of this first project (feel free to do it here), we can find a lot of things that can be improved, starting with the lack of organization of the files, continuing with the code duplication everywhere you see, jQuery... Ahm, wait a minute, jQuery is not a bad thing, unless in this project because it fulfils its function for developing a simple game in the browser.
 

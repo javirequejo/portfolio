@@ -14,7 +14,8 @@ const StackProgressDiv = styled.div`
   border-radius: 6px;
   display: flex;
   height: 4rem;
-  overflow:hidden;
+  overflow: hidden;
+  transform: skew(-7deg);
 `;
 
 const StackProgressBar = styled.div`

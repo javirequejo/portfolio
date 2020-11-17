@@ -7,8 +7,11 @@ const IconDiv = styled.div`
 
 const IconImg = styled.img`
     width: 30%;
+    @media (max-width: 1280px) {
+      width: 60%;
+    }
     @media (max-width: 768px) {
-      width: 100%;
+      width: 80%;
     }
 `;
 

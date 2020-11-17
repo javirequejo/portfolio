@@ -2,7 +2,7 @@ export default [
   {
     key: 1,
     title: 'Story Land',
-    image: 'https://res.cloudinary.com/dls511fr9/image/upload/v1596923523/portfolio/storyland-yellow.png',
+    image: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605575688/portfolio/storyland-cropped.png',
     description: 'App to manage your read and pending books, discover new recommendations in a full catalog, track your reading time with daily stats or connect with your friends and discover what they are reading.',
     frontStack: ['Javascript', 'React'],
     backStack: ['Node.js', 'Express', 'MongoDB', 'Google Cloud Vision API'],

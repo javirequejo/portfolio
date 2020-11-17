@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CardDiv = styled.div`
     position: relative;
     width: 26vw;
-    height: 52vh;
+    height: 46vh;
     border-radius: 20px;
     background-color: #141e30;
     color: #f2f2f2;
@@ -17,6 +17,7 @@ const CardDiv = styled.div`
     }
     @media (max-width: 768px) {
       width: 100%;
+      padding-bottom: 1em;
     }
 `;
 
@@ -31,9 +32,12 @@ const CardFront = styled.div`
     }
 `;
 
-const CardImg = styled.img`
-    max-width: 100%;
-    height: 50%;
+const CardImgContainer = styled.div`
+    width: 100%;
+    height: 9em;
+    background: ${(props) => `url('${props.image}')`};
+    background-size: cover; 
+    background-repeat: no-repeat;
 `;
 
 const CardTagsContainer = styled.div`
@@ -80,7 +84,7 @@ const ProjectCard = ({
     >
       {!inHover && (
         <CardFront>
-          <CardImg src={image} alt={title} />
+          <CardImgContainer image={image} />
           <h3>{title}</h3>
           <CardTagsContainer>
             {frontStack.length > 0

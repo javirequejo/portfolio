@@ -40,11 +40,17 @@ const SingleArticleBox = styled.div`
     @media (max-width: 768px) {
       width: 100%;
       height: 42vh;
+      padding-bottom: 1em;
     }
 `;
 
-const SubArticleImage = styled.img`
-    max-height: 50%;
+const SubArticleImageContainer = styled.div`
+    width: 100%;
+    height: 15em;
+    background: ${(props) => `url('${props.image}')`};
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
 `;
 
 const SubArticleBox = styled.div`
@@ -53,9 +59,11 @@ const SubArticleBox = styled.div`
     padding: 1vh 1.5vw;
     text-align: center;
     z-index: 9;
+    & h4 {
+      font-size: 1.1em;
+    }
     & p {
       color: #f2f2f2;
-      font-size: 0.9rem;
     }
 `;
 
@@ -92,7 +100,6 @@ const LatestArticles = () => {
       </p>
       <ArticlesGrid>
         {posts
-          // eslint-disable-next-line max-len
           .reverse()
           .map((elem) => {
             const {
@@ -101,7 +108,7 @@ const LatestArticles = () => {
             return (
               <Link to={slug} key={title}>
                 <SingleArticleBox>
-                  <SubArticleImage src={image} alt={title} />
+                  <SubArticleImageContainer image={image} />
                   <SubArticleBox>
                     <h4>{title}</h4>
                     <p>{description}</p>

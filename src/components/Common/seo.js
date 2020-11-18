@@ -21,6 +21,7 @@ function SEO({
             title
             description
             author
+            url
           }
         }
       }
@@ -29,6 +30,7 @@ function SEO({
 
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
+  const { url } = site.siteMetadata;
 
   return (
     <Helmet
@@ -47,12 +49,32 @@ function SEO({
           content: title,
         },
         {
+          name: 'keywords',
+          content: 'javirequejo,developer,react,javascript,node,php,software,engineering,full,stack',
+        },
+        {
           property: 'og:description',
           content: metaDescription,
         },
         {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          property: 'og:url',
+          content: url,
+        },
+        {
+          property: 'og:image',
+          content: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg',
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+        {
+          property: 'og:image:height',
+          content: '630',
         },
         {
           name: 'twitter:card',

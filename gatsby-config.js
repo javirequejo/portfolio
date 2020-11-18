@@ -3,7 +3,9 @@ require('dotenv').config();
 module.exports = {
   siteMetadata: {
     title: 'Javi Requejo - Full Stack Developer',
+    description: 'Full stack developer living in UK and working with Javascript, React, Node and PHP.',
     author: 'Javi Requejo',
+    url: 'https://javirequejo.com/',
   },
   plugins: [
     'gatsby-plugin-sass',

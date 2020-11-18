@@ -33,7 +33,7 @@ const SocialIcon = (props) => {
         href={socialLink}
         rel="noopener noreferrer"
       >
-        <IconImg src={iconLink} />
+        <IconImg src={iconLink} loading="lazy" />
       </a>
     </IconDiv>
   );

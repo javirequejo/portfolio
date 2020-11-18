@@ -25,8 +25,8 @@ const NavLogoTitleImg = styled.img`
 
 const NavLogo = () => (
   <NavLogoContainer>
-    <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" />
-    <NavLogoTitleImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg" />
+    <NavLogoImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1595451582/portfolio/profile.png" loading="lazy" />
+    <NavLogoTitleImg src="https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg" loading="lazy" />
   </NavLogoContainer>
 );
 

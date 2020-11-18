@@ -88,7 +88,7 @@ const PostPage = ({ data }) => {
       <Layout>
         <PostPageContainer>
           <PostTitle>{title}</PostTitle>
-          <PostCoverImg src={image} alt={slug} />
+          <PostCoverImg src={image} alt={slug} loading="lazy" />
           <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </PostPageContainer>
       </Layout>

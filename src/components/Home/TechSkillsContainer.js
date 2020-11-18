@@ -28,7 +28,7 @@ const TechSkillsContainer = () => (
   <TechSkillsDiv>
     <AboutTitle>Tech Skills</AboutTitle>
     <TechSkillsBox>
-      {skills.map((skill) => <SingleTechSkill {...skill} />)}
+      {skills.map((skill) => <SingleTechSkill {...skill} loading="lazy" />)}
     </TechSkillsBox>
   </TechSkillsDiv>
 );

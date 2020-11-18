@@ -65,6 +65,7 @@ const MainContainer = () => (
       <MainCoverImg
         src="https://res.cloudinary.com/dls511fr9/image/upload/v1602502374/portfolio/computer-cover.png"
         alt="Computer cover image"
+        loading="lazy"
       />
     </MainImgDiv>
   </MainContainerDiv>

@@ -79,12 +79,12 @@ const PostPage = ({ data }) => {
   const post = data.markdownRemark;
   const { html } = post;
   const {
-    title, description, image, slug,
+    title, image, slug,
   } = post.frontmatter;
   return (
     <>
       <GlobalStyle />
-      <SEO title={title} />
+      <SEO title={title} image={image} />
       <Layout>
         <PostPageContainer>
           <PostTitle>{title}</PostTitle>

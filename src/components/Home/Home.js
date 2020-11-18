@@ -28,7 +28,7 @@ const PageSection = styled.section`
 
 const Home = () => (
   <HomeDiv>
-    <SEO title="Javi Requejo - Full Stack Developer" />
+    <SEO title="Javi Requejo - Full Stack Developer" image="https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg" />
     <PageSection>
       <MainContainer />
     </PageSection>

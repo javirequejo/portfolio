@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
-  lang, meta, title,
+  image, lang, meta, title,
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -66,7 +66,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: 'https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg',
+          content: image,
         },
         {
           property: 'og:image:width',
@@ -100,14 +100,13 @@ function SEO({
 SEO.defaultProps = {
   lang: 'en',
   meta: [],
-  description: '',
 };
 
 SEO.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 };
 
 export default SEO;

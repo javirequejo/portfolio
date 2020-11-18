@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import SEO from '../Common/seo';
 import H2Title from './H2Title';
 import MainContainer from './MainContainer';
 import ProjectsContainer from './ProjectsContainer';
@@ -28,7 +27,6 @@ const PageSection = styled.section`
 
 const Home = () => (
   <HomeDiv>
-    <SEO title="Javi Requejo - Full Stack Developer" image="https://res.cloudinary.com/dls511fr9/image/upload/v1605568289/portfolio/javi-requejo-logo.svg" />
     <PageSection>
       <MainContainer />
     </PageSection>

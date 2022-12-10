@@ -24,11 +24,11 @@ const AboutDescriptionContainer = () => (
       {' '}
       <span role="img" aria-label="uk-flag">🇬🇧</span>
       {' '}
-      currently working for a spanish startup:
+      currently working for:
       {' '}
-      <a target="_blank" rel="noreferrer" href="https://alternaonline.es/">Alterna Online</a>
+      <a target="_blank" rel="noreferrer" href="https://www.veratrak.com/">Veratrak</a>
       <br />
-      I mainly work with Javascript (React & Node.js)
+      I mainly work with Javascript (Angular, React & Node.js)
       but I also have experience working with PHP (Symfony) and others.
     </AboutDescriptionP>
   </AboutDescriptionDiv>

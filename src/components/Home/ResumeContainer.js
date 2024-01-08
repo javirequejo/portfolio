@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import AboutTitle from './AboutTitle';
 
-const RESUME_LINK = 'https://res.cloudinary.com/dls511fr9/image/upload/v1612221887/portfolio/Javier_Requejo_Web_Resume.pdf';
+const RESUME_LINK = 'https://res.cloudinary.com/dls511fr9/image/upload/v1704754061/portfolio/Javier_Requejo_Web_Resume_v2.pdf';
 
 const ResumeDiv = styled.div`
   padding: 4vh 5vw;

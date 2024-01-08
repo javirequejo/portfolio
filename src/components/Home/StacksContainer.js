@@ -22,7 +22,7 @@ const StackProgressBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: ${(props) => props.percentage};
   background-color: ${(props) => props.bgColor};
 `;
 
@@ -39,12 +39,12 @@ const StacksContainer = () => (
   <StacksMainContainer>
     <AboutTitle>Profile</AboutTitle>
     <StackProgressDiv>
-      <StackProgressBar bgColor="#1d3354">
-        <StackProgressP>Frontend 50%</StackProgressP>
+      <StackProgressBar bgColor="#1d3354" percentage="40%">
+        <StackProgressP>Frontend 40%</StackProgressP>
       </StackProgressBar>
 
-      <StackProgressBar bgColor="#d64045">
-        <StackProgressP>Backend 50%</StackProgressP>
+      <StackProgressBar bgColor="#d64045" percentage="60%">
+        <StackProgressP>Backend 60%</StackProgressP>
       </StackProgressBar>
     </StackProgressDiv>
   </StacksMainContainer>
